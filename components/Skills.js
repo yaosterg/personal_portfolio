@@ -21,7 +21,7 @@ export default function Skills() {
             <div className={styles.carousel__image}>
               <img
                 className={styles.carousel__item__img}
-                src="https://res.cloudinary.com/thewebmaster/image/upload/c_scale,f_auto,q_auto:best,w_516/images/html/html5.png"
+                src="../images/HTML.webp"
                 width="480"
                 height="720"
               />
@@ -38,7 +38,7 @@ export default function Skills() {
             <div className={styles.carousel__image}>
               <img
                 className={styles.carousel__item__img}
-                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                src="../images/Javascript.png"
                 width="480"
                 height="720"
               />
@@ -55,7 +55,7 @@ export default function Skills() {
             <div className={styles.carousel__image}>
               <img
                 className={styles.carousel__item__img}
-                src="https://w0.peakpx.com/wallpaper/209/515/HD-wallpaper-python-logo-coding-kod-kodlama-code-mobile-lock-programming.jpg"
+                src="../images/Python.jpeg"
                 width="480"
                 height="720"
               />
@@ -72,8 +72,7 @@ export default function Skills() {
             <div className={styles.carousel__image}>
               <img
                 className={styles.carousel__item__img}
-                src="https://pbs.twimg.com/card_img/1644247183221223426/WvG3uTyd?format=png&name=medium"
-                width="480"
+                src="../images/React.png"
                 height="720"
               />
             </div>
@@ -89,7 +88,7 @@ export default function Skills() {
             <div className={styles.carousel__image}>
               <img
                 className={styles.carousel__item__img}
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
+                src="../images/Postgresql.svg"
                 width="480"
                 height="720"
               />
@@ -107,7 +106,7 @@ export default function Skills() {
             <div className={styles.carousel__image}>
               <img
                 className={styles.carousel__item__img}
-                src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
+                src="../images/Redux.webp"
                 width="480"
                 height="720"
               />
@@ -124,7 +123,7 @@ export default function Skills() {
             <div className={styles.carousel__image}>
               <img
                 className={styles.carousel__item__img}
-                src="https://images.ctfassets.net/c63hsprlvlya/IacLLeOBR5WCvdCPqKuff/6860b5cc464c4f54703a2befa3f706b4/nextjs3.webp"
+                src="../images/Next.avif"
                 width="480"
                 height="720"
               />
@@ -141,7 +140,7 @@ export default function Skills() {
             <div className={styles.carousel__image}>
               <img
                 className={styles.carousel__item__img}
-                src="https://colorlib.com/cdn-cgi/image/width=1600,height=948,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/sites/2/nodejs-frameworks.png"
+                src="../images/Node.jpeg"
                 width="480"
                 height="720"
               />
@@ -158,7 +157,7 @@ export default function Skills() {
             <div className={styles.carousel__image}>
               <img
                 className={styles.carousel__item__img}
-                src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.png"
+                src="../images/Express.png"
                 width="480"
                 height="720"
               />
@@ -175,7 +174,7 @@ export default function Skills() {
             <div className={styles.carousel__image}>
               <img
                 className={styles.carousel__item__img}
-                src="https://f9s9t9d6.rocketcdn.me/wp-content/uploads/2020/04/Artboard-11-1024x724.png"
+                src="../images/Css.jpeg"
                 width="480"
                 height="720"
               />
@@ -221,8 +220,9 @@ export default function Skills() {
           </li>
         </ul>
 
-        {/* <div className={styles.carousel__nav}>
-          <Button className="prev" variant="primary">
+        <div className={styles.carousel__nav}>
+          <h1>Technical Skills</h1>
+          {/* <Button className="prev" variant="primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-arrow-big-left-filled"
@@ -264,8 +264,8 @@ export default function Skills() {
                 fill="currentColor"
               ></path>
             </svg>
-          </Button>
-        </div> */}
+          </Button> */}
+        </div>
       </section>
     </div>
   );
