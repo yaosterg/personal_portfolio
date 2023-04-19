@@ -63,27 +63,31 @@
   flex-grow: 0;
 }
 
-.carousel__item:nth-child(3),
+/* .carousel__item:nth-child(3),
 .carousel__item:nth-child(10) {
   flex: 0 0 10px;
-}
+} */
 
-.carousel__item:nth-child(2),
+/* .carousel__item:nth-child(2),
 .carousel__item:nth-child(11) {
   flex: 0 0 5px;
   transform: translateX(-50px);
-}
+} */
 
-.carousel__item:nth-child(11) {
+/* .carousel__item:nth-child(11) {
   transform: translateX(50px);
-}
+} */
 
 .carousel__item:nth-child(1),
+.carousel__item:nth-child(2),
+.carousel__item:nth-child(3),
+.carousel__item:nth-child(n + 10),
+.carousel__item:nth-child(n + 11),
 .carousel__item:nth-child(n + 12) {
   flex: 0 0 0px;
   margin: 0;
   box-shadow: none;
-  opacity: 0 !important;
+  /* opacity: 0 !important; */
 }
 
 .carousel__item:not(:nth-child(n + 5)) img,
@@ -93,7 +97,7 @@
 
 .carousel__item:not(:nth-child(n + 4)) *,
 .carousel__item:nth-child(n + 10) * {
-  opacity: 0 !important;
+  /* opacity: 0 !important; */
 }
 
 #data_active,
@@ -113,7 +117,7 @@
   z-index: -1;
   aspect-ratio: 2/3;
   object-fit: cover;
-  filter: saturate(0.2) contrast(0.75) brightness(1.1);
+  filter: saturate(0.2) contrast(0.75) brightness(1.5);
 }
 
 .carousel__item::after {
@@ -173,7 +177,7 @@
   font-size: 1.75em;
   font-weight: 600;
   letter-spacing: 0.8px;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
 }
 .carousel__contents .user__title {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
