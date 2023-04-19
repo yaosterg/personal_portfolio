@@ -80,8 +80,8 @@
 
 .carousel__item:nth-child(1),
 .carousel__item:nth-child(2),
-.carousel__item:nth-child(3),
-.carousel__item:nth-child(n + 10),
+/* .carousel__item:nth-child(3),
+.carousel__item:nth-child(n + 10), */
 .carousel__item:nth-child(n + 11),
 .carousel__item:nth-child(n + 12) {
   flex: 0 0 0px;

@@ -7,7 +7,7 @@ export default function Skills() {
   useEffect(() => {
     setTimeout(() => {
       carousel > 10 ? setCarousel(0) : setCarousel(carousel + 1);
-    }, 2000);
+    }, 1500);
     return () => {};
   }, [carousel]);
   return (
