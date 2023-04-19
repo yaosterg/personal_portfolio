@@ -1,6 +1,8 @@
 #carouselbox {
   --height: calc(80vh - 50px);
   --width: 450px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .carousel {
@@ -56,7 +58,7 @@
   transition: all 0.3s ease;
 }
 
-.carousel__item[data-active] {
+.carousel__item#data_active {
   flex-basis: var(--width);
   flex-grow: 0;
 }
@@ -94,11 +96,11 @@
   opacity: 0 !important;
 }
 
-/* [data-active],
-[data-active] * {
-    opacity: 1!important;
-    filter: none!important;
-} */
+#data_active,
+#data_active * {
+  opacity: 1 !important;
+  filter: none !important;
+}
 
 .carousel__item__img {
   display: block;
@@ -131,7 +133,7 @@
   transition: all 0.6s cubic-bezier(0.55, 0.24, 0.18, 1);
 }
 
-[data-active].carousel__item::after {
+#data_active.carousel__item::after {
   transform: translateY(100%);
 }
 
@@ -154,7 +156,7 @@
   opacity: 0;
 }
 
-[data-active] .carousel__contents {
+#data_active .carousel__contents {
   transform: translateX(0px);
   transition-duration: 0.66s;
   opacity: 1;
@@ -166,13 +168,16 @@
 
 .carousel__contents .user__name {
   color: #e8eff4;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.75em;
   font-weight: 600;
   letter-spacing: 0.8px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 .carousel__contents .user__title {
-  font-family: lexend;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 0.875em;
   letter-spacing: 1.25px;
   font-weight: 500;
@@ -183,3 +188,18 @@
   -webkit-background-clip: text;
   opacity: 0.85 !important;
 }
+
+.carousel__nav {
+  padding: 1em;
+  justify-self: center;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+/* .carousel_button {
+  display: flex;
+  gap: 0.5em;
+  padding: 0.5em 1.5em;
+} */

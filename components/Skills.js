@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/Skills.module.css";
+import Button from "@mui/material/Button";
 
 export default function Skills() {
+  const [carousel, setCarousel] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      carousel > 10 ? setCarousel(0) : setCarousel(carousel + 1);
+      console.log(carousel);
+    }, 3000);
+    return () => {};
+  }, [carousel]);
   return (
     <div id={styles.carouselbox}>
       <section className={styles.carousel}>
@@ -66,7 +75,10 @@ export default function Skills() {
               <h3 className={styles.user__title}>Designer and Bandit </h3>
             </div>
           </li>
-          <li className={styles.carousel__item} data-active>
+          <li
+            className={styles.carousel__item}
+            id={carousel === 2 ? styles.data_active : null}
+          >
             <div className={styles.carousel__image}>
               <img
                 className={styles.carousel__item__img}
@@ -188,51 +200,50 @@ export default function Skills() {
           </li>
         </ul>
 
-        <div className="carousel__nav">
-          <button className="prev">
+        <div className={styles.carousel__nav}>
+          <Button className="prev" variant="primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-arrow-big-left-filled"
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
                 d="M9.586 4l-6.586 6.586a2 2 0 0 0 0 2.828l6.586 6.586a2 2 0 0 0 2.18 .434l.145 -.068a2 2 0 0 0 1.089 -1.78v-2.586h7a2 2 0 0 0 2 -2v-4l-.005 -.15a2 2 0 0 0 -1.995 -1.85l-7 -.001v-2.585a2 2 0 0 0 -3.414 -1.414z"
-                stroke-width="0"
+                strokeWidth="0"
                 fill="currentColor"
               ></path>
             </svg>
-            <span>prev</span>
-          </button>
-          <button className="next">
-            <span>next</span>
+          </Button>
+
+          <Button className="next" variant="primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-arrow-big-right-filled"
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
                 d="M12.089 3.634a2 2 0 0 0 -1.089 1.78l-.001 2.586h-6.999a2 2 0 0 0 -2 2v4l.005 .15a2 2 0 0 0 1.995 1.85l6.999 -.001l.001 2.587a2 2 0 0 0 3.414 1.414l6.586 -6.586a2 2 0 0 0 0 -2.828l-6.586 -6.586a2 2 0 0 0 -2.18 -.434l-.145 .068z"
-                stroke-width="0"
+                strokeWidth="0"
                 fill="currentColor"
               ></path>
             </svg>
-          </button>
+          </Button>
         </div>
       </section>
     </div>
