@@ -16,6 +16,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import styles from "../styles/Nav.module.css";
 import Link from "next/link";
+import AttractionsTwoToneIcon from "@mui/icons-material/AttractionsTwoTone";
 
 const pages = ["Home", "About", "Skills", "Projects"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -43,7 +44,9 @@ function ResponsiveAppBar() {
     <AppBar position="fixed" top="0" color="inherit">
       <Container maxWidth="xxl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <AttractionsTwoToneIcon
+            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+          />
           <Typography
             variant="h6"
             noWrap
