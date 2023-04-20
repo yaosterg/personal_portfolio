@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Aboutme.module.css";
+import styles from "../styles/About.module.css";
 import Link from "next/link";
 
 export default function About() {
