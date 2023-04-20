@@ -15,7 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-const pages = ["Home", "Skills", "Projects"];
+const pages = ["Home", "About", "Skills", "Projects"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
@@ -38,7 +38,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" color="inherit">
+    <AppBar position="fixed" top="0" color="inherit">
       <Container maxWidth="xxl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />

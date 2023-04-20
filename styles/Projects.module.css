@@ -3,7 +3,6 @@
   justify-content: center;
   font-family: monospace;
   color: aliceblue;
-
   z-index: 1;
   width: 100%;
   padding: 2rem;
@@ -12,8 +11,11 @@
   flex-direction: column;
   justify-content: center;
   gap: 3rem;
+  scroll-snap-align: start;
 }
-
+.project_title {
+  justify-content: left;
+}
 .projectsh1 {
   margin-left: 10%;
   position: absolute;

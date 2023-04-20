@@ -3,3 +3,9 @@
   height: 100%;
   background-clip: content-box;
 }
+
+.snap {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}

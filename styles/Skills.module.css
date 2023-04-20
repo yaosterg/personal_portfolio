@@ -3,6 +3,10 @@
   --width: 450px;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  scroll-snap-align: start;
+  padding-top: 100px;
+  margin-left: 10%;
+  padding-bottom: 500px;
 }
 
 .carousel {
@@ -196,7 +200,7 @@
 .carousel__nav {
   padding: 1em;
   justify-self: left;
-  margin-left: 10%;
+  /* margin-left: 10%; */
   grid-row: 1;
   display: flex;
   justify-content: space-between;

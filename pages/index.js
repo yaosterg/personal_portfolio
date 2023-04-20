@@ -29,9 +29,9 @@ export default function Home() {
           baseColor: 0x12e3ba,
           backgroundColor: 0x0,
           amplitudeFactor: 2.5,
-          xOffset: 0.45,
-          yOffset: 0.28,
-          size: 0.4,
+          xOffset: 0.4,
+          yOffset: 0.1,
+          size: 1.4,
           THREE: THREE,
         })
       );
@@ -44,11 +44,14 @@ export default function Home() {
     <>
       <div className={styles.main} ref={myRef}>
         {" "}
-        <Navbar />
-        <Homepage />
-        <About />
-        <Skills />
-        <Projects />
+        <div className={styles.snap}>
+          {" "}
+          <Navbar />
+          <Homepage />
+          <About />
+          <Skills />
+          <Projects />
+        </div>
       </div>
     </>
   );

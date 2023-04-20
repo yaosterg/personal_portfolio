@@ -1,11 +1,12 @@
 #aboutmediv {
-  height: 175vh;
+  height: 130vh;
   width: 100vw;
   color: aliceblue;
   font-family: monospace;
+  scroll-snap-align: start;
 }
 
 .aboutmeintro {
   margin-left: 10%;
-  height: 35%;
+  height: 55%;
 }

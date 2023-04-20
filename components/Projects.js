@@ -4,7 +4,6 @@ import styles from "../styles/Projects.module.css";
 export default function Projects() {
   return (
     <div className={styles.projectscontainer}>
-      <h1 className={styles.projectsh1}>Technical Projects</h1>
       <div className={styles.projectsproject}>
         <div className={styles.projects_container}>
           <div
@@ -73,11 +72,10 @@ export default function Projects() {
           </a>
         </div>
         <div className={styles.projects_container1}>
-          <div
-            className={styles.projectatag}
-            href="https://unsplash.com/photos/fsH1KjbdjE8"
-            target="_blank"
-          >
+          <div className={styles.projects_title}>
+            <h1>Projects</h1>
+          </div>
+          <div className={styles.projectatag}>
             <div className={styles.project}>
               <img
                 className={styles.projectimgtag}
