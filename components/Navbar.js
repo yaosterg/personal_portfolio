@@ -14,6 +14,8 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import styles from "../styles/Nav.module.css";
+import Link from "next/link";
 
 const pages = ["Home", "About", "Skills", "Projects"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -62,27 +64,33 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "Black", display: "block" }}
-              >
-                {page}
-              </Button>
+              <Link key={page} href={"/#" + page} className={styles.atag}>
+                {" "}
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "Black", display: "block" }}
+                >
+                  {page}
+                </Button>
+              </Link>
             ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Connect with LinkedIn!">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <LinkedInIcon sx={{ m: 1 }} />
+                <Link href="https://www.linkedin.com/in/yaozguan/">
+                  <LinkedInIcon sx={{ m: 1 }} />
+                </Link>
               </IconButton>
             </Tooltip>
           </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Checkout my Github!">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <GitHubIcon sx={{ m: 1 }} />
+                <Link href="https://github.com/yaosterg">
+                  <GitHubIcon sx={{ m: 1 }} />
+                </Link>
               </IconButton>
             </Tooltip>
           </Box>

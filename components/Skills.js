@@ -11,7 +11,7 @@ export default function Skills() {
     return () => {};
   }, [carousel]);
   return (
-    <div id={styles.carouselbox}>
+    <div className={styles.carouselbox} id="Skills">
       <section className={styles.carousel}>
         <ul className={styles.carousel__list}>
           <li

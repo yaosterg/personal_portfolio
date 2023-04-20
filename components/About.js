@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className={styles.aboutmediv}>
+    <div className={styles.aboutmediv} id="About">
       <div className={styles.box}>
         <div className={styles.aboutmeinfo}>
           <h1>ABOUT</h1>

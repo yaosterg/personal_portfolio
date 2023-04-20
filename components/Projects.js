@@ -3,7 +3,7 @@ import styles from "../styles/Projects.module.css";
 
 export default function Projects() {
   return (
-    <div className={styles.projectscontainer}>
+    <div className={styles.projectscontainer} id="Projects">
       <div className={styles.projectsproject}>
         <div className={styles.projects_container}>
           <div

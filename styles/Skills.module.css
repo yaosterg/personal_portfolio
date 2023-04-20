@@ -1,4 +1,4 @@
-#carouselbox {
+.carouselbox {
   --height: calc(80vh - 50px);
   --width: 450px;
   margin-top: 2rem;
@@ -137,7 +137,7 @@
     rgba(118, 221, 136, 0.5) 60%,
     rgba(0, 255, 246, 0.6) 100%
   );
-  opacity: 0.5;
+  opacity: 0.7;
   transition: all 0.6s cubic-bezier(0.55, 0.24, 0.18, 1);
 }
 
