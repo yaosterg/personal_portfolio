@@ -34,7 +34,7 @@
 }
 
 .projects_container {
-  margin-top: 100px;
+  margin-top: 25px;
   margin-left: 5%;
   padding: 3rem;
   display: flex;
@@ -45,7 +45,7 @@
 }
 
 .projects_container1 {
-  margin-top: 100px;
+  margin-top: 25px;
   padding: 3rem;
   display: flex;
   gap: 2rem;
