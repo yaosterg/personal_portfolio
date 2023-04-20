@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Homepage from "@/components/Homepage";
-import AboutMe from "@/components/Aboutme";
+import Aboutme from "@/components/Aboutme";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import React, { useState, useEffect, useRef } from "react";
@@ -46,7 +46,7 @@ export default function Home() {
         {" "}
         <Navbar />
         <Homepage />
-        <AboutMe />
+        <Aboutme />
         <Skills />
         <Projects />
       </div>
