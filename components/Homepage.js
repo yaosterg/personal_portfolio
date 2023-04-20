@@ -12,7 +12,7 @@ export default function AboutMe() {
           <h1>
             Hi, my name is <span>Yao Guan</span>
           </h1>
-          <p>I'm a New York based Full Stack Developer</p>
+          <p>{"I'm a New York based Full Stack Developer"}</p>
         </div>
       </div>
     </>

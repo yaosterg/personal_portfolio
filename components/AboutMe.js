@@ -7,7 +7,7 @@ export default function AboutMe() {
     <div className={styles.aboutmediv}>
       <div className={styles.aboutmeinfo}>
         <h1>ABOUT</h1>
-        <p>I'm curious, ambitious, and love new challenges :)</p>
+        <p>{"I'm curious, ambitious, and love new challenges :)"}</p>
         <p>My interest focuses on new and emerging tech</p>
         <p> Formerly a healthcare provider, Pharmacist.</p>
         <p>
