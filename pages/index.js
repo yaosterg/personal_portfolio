@@ -2,7 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
-import AboutMe from "@/components/AboutMe";
+import Homepage from "@/components/Homepage";
+import AboutMe from "@/components/Aboutme";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import React, { useState, useEffect, useRef } from "react";
@@ -23,14 +24,14 @@ export default function Home() {
           mouseControls: true,
           touchControls: true,
           gyroControls: true,
-          minHeight: 150.0,
-          minWidth: 150.0,
-          baseColor: 0xd9d9d9,
-          backgroundColor: 0x3b3b3c,
-          amplitudeFactor: 5.0,
-          xOffset: 0.23,
-          yOffset: 0.1,
-          size: 1.6,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          baseColor: 0x12e3ba,
+          backgroundColor: 0x0,
+          amplitudeFactor: 1.5,
+          xOffset: 0.43,
+          yOffset: 0.2,
+          size: 0.5,
           THREE: THREE,
         })
       );
@@ -44,6 +45,7 @@ export default function Home() {
       <div className={styles.main} ref={myRef}>
         {" "}
         <Navbar />
+        <Homepage />
         <AboutMe />
         <Skills />
         <Projects />

@@ -1,4 +1,18 @@
-#aboutmediv {
-  height: 95vh;
-  width: 100vw;
+.aboutmediv {
+  color: white;
+  height: 100vh;
+  color: aliceblue;
+  font-family: monospace;
+}
+
+.aboutmeinfo {
+  margin-left: 10%;
+  margin-bottom: 100px;
+}
+.resumeinfo {
+  color: aliceblue;
+}
+.contactinfo {
+  display: flex;
+  flex-direction: column;
 }

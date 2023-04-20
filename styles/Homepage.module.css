@@ -1,0 +1,11 @@
+#aboutmediv {
+  height: 175vh;
+  width: 100vw;
+  color: aliceblue;
+  font-family: monospace;
+}
+
+.aboutmeintro {
+  margin-left: 10%;
+  height: 35%;
+}
