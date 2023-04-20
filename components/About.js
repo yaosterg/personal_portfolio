@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Aboutme.module.css";
 import Link from "next/link";
 
-export default function Aboutme() {
+export default function About() {
   return (
     <div className={styles.aboutmediv}>
       <div className={styles.aboutmeinfo}>
