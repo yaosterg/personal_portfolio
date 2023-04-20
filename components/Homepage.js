@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Homepage.module.css";
 
-export default function AboutMe() {
+export default function Homepage() {
   return (
     <>
       <div id={styles.aboutmediv}>
