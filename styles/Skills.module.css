@@ -106,7 +106,7 @@
 
 #data_active,
 #data_active * {
-  opacity: 1 !important;
+  opacity: 10 !important;
   filter: none !important;
 }
 
