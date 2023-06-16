@@ -33,11 +33,24 @@ export default function About() {
           </div>
         </div>
         <div className={styles.aboutmeinfo}>
-          <h1>Education</h1>
+          <h1>Education & Experience:</h1>
+          <h4>
+            2023: XPC Healthcare + AI Hackathon. Development of Subi-Health,
+            your personalized aim at patient empowerment and education.
+            healthcare companion
+          </h4>
           <h4>2023: Fullstack Academy - 17 week immersive program</h4>
           <h4>
-            2018: University at Buffalo, School of Pharmacy and Pharmeutical
-            Science - Doctorate of Pharmacy
+            2021-2023: COVID Program Director & immunization lead at Mannings
+            Pharmacy Corp
+          </h4>
+          <h4>2019-2023: Supervising pharmacist at Mannings Pharmacy Corp</h4>
+          <h4>
+            2018-2019: Staff Pharmacist at Mannings & Mannings 8th Avenue Corp
+          </h4>
+          <h4>
+            2012-2018: University at Buffalo, School of Pharmacy and
+            Pharmeutical Science - Doctorate of Pharmacy
           </h4>
         </div>{" "}
       </div>

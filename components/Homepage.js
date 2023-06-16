@@ -10,7 +10,7 @@ export default function Homepage() {
         <div className={styles.aboutmeintro}>
           {" "}
           <h1>
-            Hi, my name is <span>Yao</span>
+            Hello there, my name is <span>Yao</span>
           </h1>
           <p>{"I'm a New York based Full Stack Developer"}</p>
         </div>

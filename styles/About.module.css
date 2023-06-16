@@ -1,7 +1,7 @@
 .aboutmediv {
   color: white;
   height: 100vh;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   font-family: monospace;
   scroll-snap-align: start;
 }
@@ -16,7 +16,7 @@
 }
 
 .resumeinfo {
-  color: aliceblue;
+  color: rgb(0, 6, 10);
 }
 .contactinfo {
   display: flex;
