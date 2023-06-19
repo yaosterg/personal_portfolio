@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Projects.module.css";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -182,6 +183,71 @@ export default function Projects() {
             </div>
           </a>
         </div>
+      </div>
+      {/* start */}
+      <div className={styles.projects_container}>
+        <div className={styles.projectatag}>
+          <div className={styles.project}>
+            <img
+              className={styles.projectimgtag}
+              src="../images/baymax/main.png"
+              alt="space-01"
+            />
+            <div className={styles.project__content}>
+              <h2>Subi-Health</h2>
+            </div>
+          </div>
+        </div>
+        <div className={styles.projectatag}>
+          <div className={styles.project}>
+            <img
+              className={styles.projectimgtag}
+              src="../images/baymax/bio.png"
+              alt="space-02"
+            />
+            <div className={styles.project__content}>
+              <h3>
+                AI empowered wellness app, aimed at improving users' ability to
+                access and navigate our healthcare system.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <a
+          className={styles.projectatag}
+          href="https://striiide.onrender.com/"
+          target="_blank"
+        >
+          <div className={styles.project}>
+            <img
+              className={styles.projectimgtag}
+              src="../images/baymax/demo.png"
+              alt="space-03"
+            />
+            <div className={styles.project__content}>
+              <h2>Demo</h2>
+            </div>
+          </div>
+        </a>
+        <a
+          className={styles.projectatag}
+          href="https://www.youtube.com/watch?v=Oaci8Ilac7g"
+          target="_blank"
+        >
+          <div className={styles.project}>
+            <img
+              className={styles.projectimgtag}
+              src="../images/baymax/results.png"
+              alt="space-04"
+            />
+            <div className={styles.project__content}>
+              <h2>
+                Subi-powered preliminary suggestions for potential causes of
+                symptoms
+              </h2>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   );

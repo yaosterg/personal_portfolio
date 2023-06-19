@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Homepage from "@/components/Homepage";
 import About from "@/components/About";
@@ -13,6 +13,7 @@ import * as THREE from "three";
 import styles from "../styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const Monst = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -66,11 +67,14 @@ export default function Home() {
         {" "}
         <div className={styles.snap}>
           {" "}
-          <Navbar />
-          <Homepage />
-          <About />
-          <Skills />
-          <Projects />
+          <div className={Monst.className}>
+            {" "}
+            <Navbar />
+            <Homepage />
+            <About />
+            <Skills />
+            <Projects />
+          </div>
         </div>
       </div>
     </>

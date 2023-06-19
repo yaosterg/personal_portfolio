@@ -3,7 +3,7 @@
   --width: 450px;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   padding-top: 100px;
   margin-left: 10%;
   padding-bottom: 500px;
@@ -205,8 +205,8 @@
   display: flex;
   justify-content: space-between;
   gap: 1em;
-  color: aliceblue;
-  font-family: monospace;
+  color: rgb(0, 0, 0);
+  /* font-family: monospace; */
 }
 
 /* .carousel_button {

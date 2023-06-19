@@ -1,8 +1,8 @@
 .aboutmediv {
   color: white;
   height: 100vh;
-  color: rgb(0, 0, 0);
-  font-family: monospace;
+  color: rgb(18, 18, 18);
+  font-size: medium;
   scroll-snap-align: start;
 }
 

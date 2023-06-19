@@ -44,10 +44,10 @@ function ResponsiveAppBar() {
     <AppBar position="fixed" top="0" color="inherit">
       <Container maxWidth="xxl">
         <Toolbar disableGutters>
-          <AttractionsTwoToneIcon
+          {/* <AttractionsTwoToneIcon
             sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-          />
-          <Typography
+          /> */}
+          {/* <Typography
             variant="h6"
             noWrap
             component="a"
@@ -63,7 +63,7 @@ function ResponsiveAppBar() {
             }}
           >
             Yao Guan
-          </Typography>
+          </Typography> */}
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
