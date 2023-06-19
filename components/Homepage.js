@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Homepage.module.css";
+import Typewriter from "typewriter-effect";
 
 export default function Homepage() {
   return (
@@ -9,10 +10,28 @@ export default function Homepage() {
 
         <div className={styles.aboutmeintro}>
           {" "}
-          <h1>
-            Hello there, my name is <span>Yao</span>
+          <h1 className={styles.typewriteheader}>
+            <Typewriter
+              options={{
+                strings: [
+                  "Hello there, my name is Yao Guan",
+                  "Welcome to my portfolio page!",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </h1>
-          <p>{"I'm a New York based Full Stack Developer"}</p>
+          <h4 className={styles.typewritetext}>
+            {" "}
+            <Typewriter
+              options={{
+                strings: ["I'm a New York based Full Stack Developer"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h4>
         </div>
       </div>
     </>
