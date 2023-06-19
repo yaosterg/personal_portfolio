@@ -207,7 +207,7 @@ export default function Projects() {
             />
             <div className={styles.project__content}>
               <h3>
-                AI empowered wellness app, aimed at improving users' ability to
+                AI empowered wellness app, aimed at improving users ability to
                 access and navigate our healthcare system.
               </h3>
             </div>

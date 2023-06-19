@@ -26,7 +26,7 @@ export default function Homepage() {
             {" "}
             <Typewriter
               options={{
-                strings: ["I'm a New York based Full Stack Developer"],
+                strings: ["I am a New York based Full Stack Developer"],
                 autoStart: true,
                 loop: true,
               }}
